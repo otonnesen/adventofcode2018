@@ -7,7 +7,7 @@ def main():
     print(parse(tokens, 0)[1])
 
 def parse(tokens, index):
-    children, metadata, s= int(tokens[index]), int(tokens[index+1]), 0
+    children, metadata, s = int(tokens[index]), int(tokens[index+1]), 0
     index += 2
     for i in range(children):
         t = parse(tokens, index)
